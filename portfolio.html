@@ -33,6 +33,8 @@
             color: var(--text-white);
             line-height: 1.6;
             overflow-x: hidden;
+            max-width: 100%;
+            width: 100%;
         }
 
         /* ===== FLOATING SYMBOLS ===== */
@@ -144,6 +146,8 @@
             position: relative;
             overflow: hidden;
             margin-top: 80px;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .hero::before {
@@ -240,6 +244,8 @@
             background: linear-gradient(135deg, var(--bg-dark) 0%, rgba(79, 70, 229, 0.05) 100%);
             position: relative;
             overflow: hidden;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .about-content {
@@ -269,6 +275,8 @@
             background: var(--bg-dark);
             position: relative;
             overflow: hidden;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .services h2 {
@@ -328,6 +336,8 @@
             background: linear-gradient(135deg, var(--bg-dark) 0%, rgba(79, 70, 229, 0.05) 100%);
             position: relative;
             overflow: hidden;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .clients h2 {
@@ -444,6 +454,8 @@
             background: var(--bg-dark);
             position: relative;
             overflow: hidden;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .certificates h2 {
@@ -505,6 +517,8 @@
             background: linear-gradient(135deg, rgba(79, 70, 229, 0.05) 0%, var(--bg-dark) 100%);
             position: relative;
             overflow: hidden;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .charts-section h2 {
@@ -532,6 +546,8 @@
             align-items: center;
             position: relative;
             z-index: 10;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .stats-display {
@@ -964,11 +980,18 @@
 
         @media (max-width: 480px) {
             header {
-                padding: 12px 15px;
+                padding: 15px 15px;
+                gap: 10px;
             }
 
             .logo {
-                font-size: 1.2rem;
+                font-size: 1.3rem;
+            }
+
+            .linkedin-icon {
+                width: 35px;
+                height: 35px;
+                font-size: 1rem;
             }
 
             .hero, .about, .services, .clients, .certificates, .connect, .footer {
@@ -1006,17 +1029,29 @@
                 font-size: 0.85rem;
             }
 
+            .client-card {
+                padding: 18px;
+                margin: 0;
+                overflow: hidden;
+            }
+
             .client-card h3 {
-                font-size: 1rem;
+                font-size: 0.95rem;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
             }
 
             .metrics-grid {
                 grid-template-columns: 1fr !important;
                 gap: 12px;
+                width: 100%;
+                overflow: hidden;
             }
 
             .metric {
                 padding: 12px;
+                min-width: 0;
+                overflow: hidden;
             }
 
             .metric-value {
@@ -1531,4 +1566,3 @@
     </script>
 </body>
 </html>
- 
